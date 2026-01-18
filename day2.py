@@ -33,3 +33,29 @@ def reverse_string(text):
 
 for string in strings:
     print(reverse_string(string))
+
+
+# using a Stack to reverse a string 
+
+class stack:
+    def __init__(self):
+        self.item = []
+
+    def pop(self):
+        return self.item.pop()      # creating methods 
+    
+    def push(self, item):
+        return self.item.append(item)
+
+string = 'my name is joel'
+
+s = stack()         # loop through pushing each character onto the stack
+for char in string:
+    s.push(char)
+
+reversed_string = ''     
+
+while s.item:         # poping each character off the top one by one and saving it into reverse string
+    reversed_string += s.pop()
+
+print(reversed_string)
