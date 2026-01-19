@@ -25,7 +25,7 @@ for string in strings:
     reverse_string(string)
 
 
-# Refactor
+# using slicing 
 
 def reverse_string(text):
     # Slicing [startpoint:endpoint:step]
