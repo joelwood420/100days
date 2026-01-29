@@ -8,7 +8,7 @@ def is_prime(n):
     return all(n % i != 0 for i in range(2, int(sqrt(n)+2)))
          
 
-print(is_prime(4))
+print(is_prime(7))
     
 
 
