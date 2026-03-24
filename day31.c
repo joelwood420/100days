@@ -36,13 +36,15 @@ int main(void)
     }
 };
 
-int input_number(void)
-{
-    int number = 0;
+int input_number(void) {
+    int number;
     printf("please input a number between 1 and 100\n");
-    scanf("%d", &number);
+    if (scanf("%d", &number) != 1) {
+        while (getchar() != '\n');
+        return 0;
+    }
     return number;
-};
+}
 
 int valid_number(int number)
 {
