@@ -1,4 +1,4 @@
-class bank_account:
+class BankAccount:
     def __init__(self, name, balance):
         self.name = name
         self.balance = balance
@@ -23,12 +23,12 @@ class bank_account:
         return f"Account Name: {self.name}, Balance: {self.balance}"
 
 
-class bank:
+class Bank:
     def __init__(self):
         self.accounts = []
 
     def create_account(self, name, initial_balance):
-        account = bank_account(name, initial_balance)
+        account = BankAccount(name, initial_balance)
         self.accounts.append(account)
         return account
 
@@ -51,7 +51,7 @@ class bank:
     
 
 
-my_bank = bank()
+my_bank = Bank()
 alice_account = my_bank.create_account("Alice", 1000)
 bob_account = my_bank.create_account("Bob", 500)
 
