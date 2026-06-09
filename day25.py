@@ -1,7 +1,7 @@
 # Build a tiny “functional filter engine” for lists of numbers.
 # Challenge: Functional Filter Engine
 # Write a function  build_filter(predicates)  that:
-# 	•	Takes a list of predicate functions  predicates , where each predicate is a  func(x) -> bool .
+# 	•search algorithmas	Takes a list of predicate functions  predicates , where each predicate is a  func(x) -> bool .
 # 	•	Returns a new function  filter_numbers(numbers)  that:
 # 	•	Takes a list of integers  numbers .
 # 	•	Returns a new list containing only the numbers that satisfy all predicates.
